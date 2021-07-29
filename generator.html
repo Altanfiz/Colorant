@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator - Colorant</title>
+    <link rel="stylesheet" href="./assets/remixicon/remixicon.css">
+    <link rel="stylesheet" href="./css/hint.min.css">
+    <link rel="stylesheet" href="./css/generator.css">
+    <script src="./generatorApp.js" type="module" defer></script>
+</head>
+<body>
+    <nav class="main-nav" id="mainNav">
+        <div class="logo"><img src="./assets/icon/Colorant.png" alt=""></div>
+        <div class="dropdown">
+            <div class="btn menu-btn"><i class="ri-menu-4-line"></i></div>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Generate</a></li>
+                <li><a href="#" class="nav-link sign-in btn">Sign in</a></li>
+                <li class="signUp"><a href="#" class="nav-link sign-up btn btn-primary">Sign up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- UI SCENE -->
+    <div class="ui-scene" data-ui-scene></div>
+
+
+    <div class="main-ctr">
+        <div id="uiSetting" class="ui-interface">
+            <div class="subtitle desc infoController">press spacebar to generate color!</div>
+            <ul class="ui-items">
+                <li class="single-ui">
+                    <button class="btn btn-tersiery btn-generate" data-btn-generate>Generate!</button>
+                </li>
+            </ul>
+        </div>
+    
+    
+        <!-- OUTPUT -->
+        <div class="output" id="output">
+            <div class="single-color">
+                <div class="color-ui"></div>
+                <div class="color-tools">
+                    <div class="btn remove-btn hint--top" role="button" aria-label="remove color" data-btn-remove>
+                        <i class="ri-delete-bin-2-line"></i>       
+                    </div>
+                    <div class="btn drag-btn hint--top" role="button" aria-label="move color" data-btn-copy>
+                        <i class="ri-drag-move-line"></i>       
+                    </div>
+                    <div class="btn copy-btn hint--top" role="button" aria-label="copy hex code" data-btn-copy>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                    <div class="btn lock-btn hint--top" aria-label="lock color" data-btn-lock data-lock="false">
+                        <i class="ri-lock-unlock-line"></i>
+                    </div>
+                </div>
+                <div class="color-info">
+                    <h4 class="color-hex" data-color-code></h4>
+                    <p class="subtitle color-name" data-color-name></p>
+                </div>
+            </div>
+            <div class="single-color">
+                <div class="color-ui"></div>
+                <div class="color-tools">
+                    <div class="btn remove-btn hint--top" role="button" aria-label="remove color" data-btn-remove>
+                        <i class="ri-delete-bin-2-line"></i>       
+                    </div>
+                    <div class="btn drag-btn hint--top" role="button" aria-label="move color" data-btn-copy>
+                        <i class="ri-drag-move-line"></i>       
+                    </div>
+                    <div class="btn copy-btn hint--top" role="button" aria-label="copy hex code" data-btn-copy>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                    <div class="btn lock-btn hint--top" aria-label="lock color" data-btn-lock data-lock="false">
+                        <i class="ri-lock-unlock-line"></i>
+                    </div>
+                </div>
+                <div class="color-info">
+                    <h4 class="color-hex" data-color-code></h4>
+                    <p class="subtitle color-name" data-color-name></p>
+                </div>
+            </div>
+            <div class="single-color">
+                <div class="color-ui"></div>
+                <div class="color-tools">
+                    <div class="btn remove-btn hint--top" role="button" aria-label="remove color" data-btn-remove>
+                        <i class="ri-delete-bin-2-line"></i>       
+                    </div>
+                    <div class="btn drag-btn hint--top" role="button" aria-label="move color" data-btn-copy>
+                        <i class="ri-drag-move-line"></i>       
+                    </div>
+                    <div class="btn copy-btn hint--top" role="button" aria-label="copy hex code" data-btn-copy>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                    <div class="btn lock-btn hint--top" aria-label="lock color" data-btn-lock data-lock="false">
+                        <i class="ri-lock-unlock-line"></i>
+                    </div>
+                </div>
+                <div class="color-info">
+                    <h4 class="color-hex" data-color-code></h4>
+                    <p class="subtitle color-name" data-color-name></p>
+                </div>
+            </div>
+            <div class="single-color">
+                <div class="color-ui"></div>
+                <div class="color-tools">
+                    <div class="btn remove-btn hint--top" role="button" aria-label="remove color" data-btn-remove>
+                        <i class="ri-delete-bin-2-line"></i>       
+                    </div>
+                    <div class="btn drag-btn hint--top" role="button" aria-label="move color" data-btn-copy>
+                        <i class="ri-drag-move-line"></i>       
+                    </div>
+                    <div class="btn copy-btn hint--top" role="button" aria-label="copy hex code" data-btn-copy>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                    <div class="btn lock-btn hint--top" aria-label="lock color" data-btn-lock data-lock="false">
+                        <i class="ri-lock-unlock-line"></i>
+                    </div>
+                </div>
+                <div class="color-info">
+                    <h4 class="color-hex" data-color-code></h4>
+                    <p class="subtitle color-name" data-color-name></p>
+                </div>
+            </div>
+            <div class="single-color">
+                <div class="color-ui"></div>
+                <div class="color-tools">
+                    <div class="btn remove-btn hint--top" role="button" aria-label="remove color" data-btn-remove>
+                        <i class="ri-delete-bin-2-line"></i>       
+                    </div>
+                    <div class="btn drag-btn hint--top" role="button" aria-label="move color" data-btn-copy>
+                        <i class="ri-drag-move-line"></i>       
+                    </div>
+                    <div class="btn copy-btn hint--top" role="button" aria-label="copy hex code" data-btn-copy>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                    <div class="btn lock-btn hint--top" aria-label="lock color" data-btn-lock data-lock="false">
+                        <i class="ri-lock-unlock-line"></i>
+                    </div>
+                </div>
+                <div class="color-info">
+                    <h4 class="color-hex" data-color-code></h4>
+                    <p class="subtitle color-name" data-color-name></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GENERATOR -->
+
+</body>
+</html>
